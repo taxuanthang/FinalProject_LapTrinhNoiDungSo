@@ -52,7 +52,7 @@ namespace TS.ColorPicker
         }
         private void PointerTrackerArea_Drag(PointerTrackerArea sender, Vector2 position)
         {
-            _slider.value = sender.Normalize(position).y;
+            _slider.value = sender.Normalize(position).x;
         }
     }
 }
