@@ -13,6 +13,6 @@ public class Thang : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //TaXuanThang
     }
 }
