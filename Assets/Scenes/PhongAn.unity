@@ -176,7 +176,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 217cea41ae3a274498ce83befd721dc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 498587768}
+--- !u!95 &498587768 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 55f28e1a3b4692b4fa461c126017f333, type: 3}
+  m_PrefabInstance: {fileID: 1243029791}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &559652089
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -203,7 +208,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3317896dfac573e49a1414034e74867c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.23
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3317896dfac573e49a1414034e74867c, type: 3}
       propertyPath: m_LocalPosition.z
