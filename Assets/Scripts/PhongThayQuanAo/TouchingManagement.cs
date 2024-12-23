@@ -11,6 +11,11 @@ public class TouchingManagement : MonoBehaviour
     [SerializeField] GameObject AccessoriesTrigger;
     [SerializeField] GameObject SkinTrigger;
 
+    private void Start()
+    {
+        OpenPickerManager.Instance.CloseColorPicker();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -19,11 +24,11 @@ public class TouchingManagement : MonoBehaviour
             var ClickedObject = getClickedObject(out RaycastHit hit);
             if (AccessoriesTrigger == ClickedObject)
             {
-                print("Clicked on Acessories");
+                AccessoriesManagement.Instance.OpenAccessories();
             }
             if (SkinTrigger == ClickedObject)
             {
-                print("Clicked on Skin");
+                OpenPickerManager.Instance.OpenColorPicker();
             }
         }
         if (Input.GetMouseButtonUp(0))
