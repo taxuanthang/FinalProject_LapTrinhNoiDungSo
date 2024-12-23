@@ -47,6 +47,7 @@ namespace TS.ColorPicker
 
         private IEnumerator TrackCoroutine()
         {
+            print("tracking");
             while (true)
             {
                 RectTransformUtility.ScreenPointToLocalPointInRectangle(_transform, Input.mousePosition, _parentCanvas.worldCamera, out Vector2 position);
