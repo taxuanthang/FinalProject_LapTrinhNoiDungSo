@@ -1,29 +1,53 @@
 using UnityEngine;
 
-public class CharacterController : MonoBehaviour
+public class MyCharacterController : MonoBehaviour
 {
-    public Animator animator;
+    public Animator animator; // Animator của nhân vật
+    public AudioSource chewingAudio; // Nguồn âm thanh nhai
+    public GameObject handPosition; // Vị trí tay để cầm hoa quả
 
     void Update()
     {
-        // Nhấn phím E để kích hoạt animation "Ăn"
+        HandleEating();
+    }
+
+    // Hàm xử lý khi bấm phím E để ăn hoa quả
+    void HandleEating()
+    {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            animator.SetTrigger("Eat");
+            if (handPosition.transform.childCount > 0)
+            {
+                // Kiểm tra hoa quả trên tay
+                var fruit = handPosition.transform.GetChild(0).gameObject;
+
+                // Kích hoạt animation "Eat"
+                animator.SetTrigger("Eat");
+
+                // Sau khi ăn xong, xóa hoa quả
+                Destroy(fruit, 1.5f); // Xóa hoa quả sau 1.5 giây (để khớp với animation)
+
+                // Phát âm thanh nhai
+                PlayChewingSound();
+            }
+            else
+            {
+                Debug.Log("No fruit in hand to eat!");
+            }
         }
     }
-        public AudioSource chewingAudio;
 
-    // Hàm này sẽ được gọi qua Animation Event
+    // Hàm được gọi từ Animation Event để phát âm thanh
     public void PlayChewingSound()
     {
-        if (chewingAudio != null)
+        if (chewingAudio != null && !chewingAudio.isPlaying)
         {
-            chewingAudio.Play(); // Chơi âm thanh nhai
+            chewingAudio.Play(); // Phát âm thanh nhai
         }
-        else
+        else if (chewingAudio == null)
         {
             Debug.LogWarning("Chewing audio source is not assigned!");
         }
     }
+
 }
