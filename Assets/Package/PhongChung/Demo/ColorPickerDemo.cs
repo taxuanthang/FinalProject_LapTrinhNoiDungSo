@@ -119,6 +119,7 @@ namespace TS.ColorPicker.Demo
             }
         }
 
+
         private void ColorPicker_OnChanged(Color color)
         {
             for (int i = 0; i < labubuParts[_labubuIndex]._partRenderer.Length; i++)
