@@ -123,6 +123,7 @@ namespace TS.ColorPicker.Demo
         {
             for (int i = 0; i < labubuParts[_labubuIndex]._partRenderer.Length; i++)
             {
+                //print(_renderer[1]);
                 _renderer[i].material.color = color;
             }
         }

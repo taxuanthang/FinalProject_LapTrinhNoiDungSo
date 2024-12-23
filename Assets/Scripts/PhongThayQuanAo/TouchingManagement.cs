@@ -19,11 +19,13 @@ public class TouchingManagement : MonoBehaviour
             var ClickedObject = getClickedObject(out RaycastHit hit);
             if (AccessoriesTrigger == ClickedObject)
             {
-                print("Clicked on Acessories");
+                AccessoriesTrigger.SetActive(false);
+                print("accessories");
             }
             if (SkinTrigger == ClickedObject)
             {
-                print("Clicked on Skin");
+                print("skin");
+                OpenPickerManager.Instance.OpenColorPicker();
             }
         }
         if (Input.GetMouseButtonUp(0))

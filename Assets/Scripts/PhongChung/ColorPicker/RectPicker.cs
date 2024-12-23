@@ -38,7 +38,9 @@ namespace TS.ColorPicker
 
         private void PointerTrackerArea_Drag(PointerTrackerArea sender, Vector2 position)
         {
+            //print("dragging");
             _handle.transform.localPosition = position;
+            print(_handle.transform.localPosition);
 
             ValueChanged?.Invoke(this, position);
         }
