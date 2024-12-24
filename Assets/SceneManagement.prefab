@@ -51,7 +51,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   sceneNames:
-  - PhongChung
+  - Demo
   - PhongTam
   - PhongAn
   - PhongThayQuanAo
