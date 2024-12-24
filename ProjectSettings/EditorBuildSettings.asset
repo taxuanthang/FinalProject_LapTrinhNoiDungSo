@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/PhongChung.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/PhongAn.unity
+    guid: 57eb010c0e9002c4c92e2ce362a4af18
+  - enabled: 1
+    path: Assets/Scenes/PhongTam.unity
+    guid: fdd29ab8c75c8fa4789af63ebd97efc1
+  - enabled: 1
+    path: Assets/Scenes/PhongThayQuanAo.unity
+    guid: 5f96dfdcb07704b4c9d57bc3ffee321d
+  - enabled: 1
+    path: Assets/Scenes/PhongTrungBay.unity
+    guid: 03419cbe4052cab4bb4c19d08acf37f0
   m_configObjects: {}

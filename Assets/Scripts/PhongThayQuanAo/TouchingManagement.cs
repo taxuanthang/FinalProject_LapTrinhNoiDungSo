@@ -24,7 +24,7 @@ public class TouchingManagement : MonoBehaviour
             var ClickedObject = getClickedObject(out RaycastHit hit);
             if (AccessoriesTrigger == ClickedObject)
             {
-                print("accessories");
+                AccessoriesManagement.Instance.OpenAccessories();
             }
             if (SkinTrigger == ClickedObject)
             {
