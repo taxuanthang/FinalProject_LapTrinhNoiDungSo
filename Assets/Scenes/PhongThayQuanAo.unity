@@ -2259,13 +2259,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 211722035}
     m_Modifications:
+    - target: {fileID: 63403790099423927, guid: a478cdec4ef796841a24288452470d57, type: 3}
+      propertyPath: m_text
+      value: Dress room
+      objectReference: {fileID: 0}
+    - target: {fileID: 63403790099423927, guid: a478cdec4ef796841a24288452470d57, type: 3}
+      propertyPath: m_fontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 63403790099423927, guid: a478cdec4ef796841a24288452470d57, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 432228297020854419, guid: a478cdec4ef796841a24288452470d57, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 432228297020854419, guid: a478cdec4ef796841a24288452470d57, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 432228297020854419, guid: a478cdec4ef796841a24288452470d57, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2275,13 +2287,51 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1379334771260227442, guid: a478cdec4ef796841a24288452470d57, type: 3}
+      propertyPath: m_text
+      value: 'Bath
+
+        room'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1379334771260227442, guid: a478cdec4ef796841a24288452470d57, type: 3}
+      propertyPath: m_fontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1379334771260227442, guid: a478cdec4ef796841a24288452470d57, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489587339066456263, guid: a478cdec4ef796841a24288452470d57, type: 3}
+      propertyPath: m_text
+      value: Home
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489587339066456263, guid: a478cdec4ef796841a24288452470d57, type: 3}
+      propertyPath: m_fontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489587339066456263, guid: a478cdec4ef796841a24288452470d57, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018784740738796046, guid: a478cdec4ef796841a24288452470d57, type: 3}
+      propertyPath: m_text
+      value: Dinner room
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018784740738796046, guid: a478cdec4ef796841a24288452470d57, type: 3}
+      propertyPath: m_fontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018784740738796046, guid: a478cdec4ef796841a24288452470d57, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 4204247446463507940, guid: a478cdec4ef796841a24288452470d57, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 4204247446463507940, guid: a478cdec4ef796841a24288452470d57, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 4204247446463507940, guid: a478cdec4ef796841a24288452470d57, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2297,15 +2347,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4402725225915309514, guid: a478cdec4ef796841a24288452470d57, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 4402725225915309514, guid: a478cdec4ef796841a24288452470d57, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 4402725225915309514, guid: a478cdec4ef796841a24288452470d57, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 400
+      value: 477
       objectReference: {fileID: 0}
     - target: {fileID: 4402725225915309514, guid: a478cdec4ef796841a24288452470d57, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2313,11 +2363,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5914332040173960312, guid: a478cdec4ef796841a24288452470d57, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 5914332040173960312, guid: a478cdec4ef796841a24288452470d57, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 5914332040173960312, guid: a478cdec4ef796841a24288452470d57, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2329,15 +2379,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6301393178533759516, guid: a478cdec4ef796841a24288452470d57, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 6301393178533759516, guid: a478cdec4ef796841a24288452470d57, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 6301393178533759516, guid: a478cdec4ef796841a24288452470d57, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -200
+      objectReference: {fileID: 0}
+    - target: {fileID: 8355400982013257722, guid: a478cdec4ef796841a24288452470d57, type: 3}
+      propertyPath: m_text
+      value: Exhibition room
+      objectReference: {fileID: 0}
+    - target: {fileID: 8355400982013257722, guid: a478cdec4ef796841a24288452470d57, type: 3}
+      propertyPath: m_fontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8355400982013257722, guid: a478cdec4ef796841a24288452470d57, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8645845411161338442, guid: a478cdec4ef796841a24288452470d57, type: 3}
       propertyPath: m_Pivot.x
