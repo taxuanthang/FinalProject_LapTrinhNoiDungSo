@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraControll : MonoBehaviour
 {
-    private float rotationSpeed = 100.0f;
+    private float rotationSpeed = 500.0f;
     private Vector3 mouseWorldPosStart;
     private float zoomScale = 5.0f;
     private float zoomMin = 0.1f;
