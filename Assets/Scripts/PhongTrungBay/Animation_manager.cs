@@ -28,14 +28,36 @@ public class AnimationManager : MonoBehaviour
         }
     }
 
+    public void startPlayBackClicked()
+    {
+        if (isPlaying)
+        {
+            StopPlayback();
+        }
+        else
+        {
+            StartPlayback();
+        }
+    }
+
     public void AppendKeyframe(KeyframeLabubu keyframe)
     {
         keyframeBuffer.Add(keyframe);
+        print(keyframe.LeftArmPos);
+        for (int i = 0; i < keyframeBuffer.Count; i++)
+        {
+            print(keyframeBuffer[i].LeftArmPos);
+        }
         Debug.Log("Added Keyframe");
     }
 
     public void StartPlayback()
     {
+        ////print(keyframeBuffer.Count);
+        //for (int i =0;i< keyframeBuffer.Count; i++)
+        //{
+        //    print(keyframeBuffer[i].LeftArmPos);
+        //}
         if (keyframeBuffer.Count == 0)
         {
             Debug.LogWarning("No keyframes to play");
@@ -48,7 +70,10 @@ public class AnimationManager : MonoBehaviour
         }
 
         isPlaying = true;
+        
         playbackCoroutine = StartCoroutine(AnimateObjectsCoroutine());
+        
+        
         Debug.Log("Playback Started");
     }
 
@@ -65,6 +90,8 @@ public class AnimationManager : MonoBehaviour
     }
 
     private IEnumerator AnimateObjectsCoroutine()
+    {
+    while (isPlaying)
     {
         for (int i = 0; i < keyframeBuffer.Count - 1; i++)
         {
@@ -89,7 +116,7 @@ public class AnimationManager : MonoBehaviour
 
                 elapsedTime += Time.deltaTime;
                 Debug.Log($"Elapsed Time: {elapsedTime}, Normalized Time: {t}");
-                yield return null; // Wait for the next frame
+                    yield return new WaitForSeconds(0.1f);
             }
 
             // Ensure the final position matches the end keyframe
@@ -100,7 +127,9 @@ public class AnimationManager : MonoBehaviour
             RightLeg.transform.position = end.RightLegPos;
         }
 
-        isPlaying = false;
-        Debug.Log("Playback Completed");
+        //isPlaying = false;
+        //Debug.Log("Playback Completed");
     }
+    }
+
 }

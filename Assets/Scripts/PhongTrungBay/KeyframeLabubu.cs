@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class KeyframeLabubu : MonoBehaviour
 {
-    public static KeyframeLabubu Instance;
-    private void Awake()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
+    //public static KeyframeLabubu Instance;
+    //private void Awake()
+    //{
+    //    if (Instance == null)
+    //    {
+    //        Instance = this;
+    //    }
+    //    else
+    //    {
+    //        Destroy(gameObject);
+    //    }
+    //}
     [SerializeField] public GameObject LeftArm;
     [SerializeField] public GameObject RightArm;
     [SerializeField] public GameObject Head;
@@ -29,14 +29,19 @@ public class KeyframeLabubu : MonoBehaviour
     public Vector3 RightLegPos { get; set; }
     public float AnimationTime { get; set; }
 
-/*    public KeyframeLabubu(Vector3 leftArmPos, Vector3 rightArmPos, Vector3 headPos, Vector3 leftLegPos, Vector3 rightLegPos)
+    public KeyframeLabubu(Vector3 leftArmPos, Vector3 rightArmPos, Vector3 headPos, Vector3 leftLegPos, Vector3 rightLegPos)
+        {
+            LeftArmPos = leftArmPos;
+            RightArmPos = rightArmPos;
+            HeadPos = headPos;
+            LeftLegPos = leftLegPos;
+            RightLegPos = rightLegPos;
+        }
+    public void addKeyframeButtonClicked()
     {
-        LeftArmPos = leftArmPos;
-        RightArmPos = rightArmPos;
-        HeadPos = headPos;
-        LeftLegPos = leftLegPos;
-        RightLegPos = rightLegPos;
-    }*/
+        Snapshot();
+        AnimationManager.Instance.AppendKeyframe(new KeyframeLabubu(LeftArmPos, RightArmPos, HeadPos, LeftLegPos, RightLegPos));
+    }
     public void Snapshot()
     {
         if (LeftArm != null)
@@ -55,9 +60,10 @@ public class KeyframeLabubu : MonoBehaviour
             RightLegPos = RightLeg.transform.position;
 
         Debug.Log("Snapshot captured for all objects.");
-        Debug.Log(LeftArmPos);
-        Debug.Log(RightArmPos);
-        Debug.Log(HeadPos);
+        //Debug.Log(LeftArmPos);
+        //Debug.Log(RightArmPos);
+        //Debug.Log(HeadPos);
+
 
     }
 
