@@ -38,11 +38,11 @@ public class AccessoriesManagement : MonoBehaviour
             return AccessoriesManagementInstance;
         }
     }
-    void Awake()
-    {
-        GameObject.DontDestroyOnLoad(gameObject);
+    //void Awake()
+    //{
+    //    GameObject.DontDestroyOnLoad(gameObject);
 
-    }
+    //}
     #endregion
 
     public void OpenAccessories()
