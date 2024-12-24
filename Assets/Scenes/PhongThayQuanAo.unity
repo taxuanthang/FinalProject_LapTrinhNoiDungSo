@@ -2279,14 +2279,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 150
       objectReference: {fileID: 0}
-    - target: {fileID: 432228297020854419, guid: a478cdec4ef796841a24288452470d57, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 432228297020854419, guid: a478cdec4ef796841a24288452470d57, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 2.5
-      objectReference: {fileID: 0}
     - target: {fileID: 1379334771260227442, guid: a478cdec4ef796841a24288452470d57, type: 3}
       propertyPath: m_text
       value: 'Bath
@@ -2333,14 +2325,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 150
       objectReference: {fileID: 0}
-    - target: {fileID: 4204247446463507940, guid: a478cdec4ef796841a24288452470d57, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -400
-      objectReference: {fileID: 0}
-    - target: {fileID: 4204247446463507940, guid: a478cdec4ef796841a24288452470d57, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 2.5
-      objectReference: {fileID: 0}
     - target: {fileID: 4354751953682027823, guid: a478cdec4ef796841a24288452470d57, type: 3}
       propertyPath: m_Name
       value: sceneNavigation
@@ -2357,10 +2341,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 477
       objectReference: {fileID: 0}
-    - target: {fileID: 4402725225915309514, guid: a478cdec4ef796841a24288452470d57, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 2.5
-      objectReference: {fileID: 0}
     - target: {fileID: 5914332040173960312, guid: a478cdec4ef796841a24288452470d57, type: 3}
       propertyPath: m_SizeDelta.x
       value: 150
@@ -2369,14 +2349,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 150
       objectReference: {fileID: 0}
-    - target: {fileID: 5914332040173960312, guid: a478cdec4ef796841a24288452470d57, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5914332040173960312, guid: a478cdec4ef796841a24288452470d57, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 2.5
-      objectReference: {fileID: 0}
     - target: {fileID: 6301393178533759516, guid: a478cdec4ef796841a24288452470d57, type: 3}
       propertyPath: m_SizeDelta.x
       value: 150
@@ -2384,10 +2356,6 @@ PrefabInstance:
     - target: {fileID: 6301393178533759516, guid: a478cdec4ef796841a24288452470d57, type: 3}
       propertyPath: m_SizeDelta.y
       value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 6301393178533759516, guid: a478cdec4ef796841a24288452470d57, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -200
       objectReference: {fileID: 0}
     - target: {fileID: 8355400982013257722, guid: a478cdec4ef796841a24288452470d57, type: 3}
       propertyPath: m_text
@@ -2623,10 +2591,6 @@ PrefabInstance:
       propertyPath: buttons.Array.data[4]
       value: 
       objectReference: {fileID: 938777080}
-    - target: {fileID: 1587505320778372411, guid: 6d3485d7b4285ef4d990505addc234cd, type: 3}
-      propertyPath: sceneNames.Array.data[3]
-      value: PhongThayQuanAo
-      objectReference: {fileID: 0}
     - target: {fileID: 7397637168141651866, guid: 6d3485d7b4285ef4d990505addc234cd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 355.37543

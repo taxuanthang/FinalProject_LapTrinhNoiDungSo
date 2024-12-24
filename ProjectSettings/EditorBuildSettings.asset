@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PhongTrungBay.unity
     guid: 03419cbe4052cab4bb4c19d08acf37f0
+  - enabled: 1
+    path: Assets/Scenes/Demo.unity
+    guid: 60927fec0747ada4ca49f585e3e63bc9
   m_configObjects: {}
