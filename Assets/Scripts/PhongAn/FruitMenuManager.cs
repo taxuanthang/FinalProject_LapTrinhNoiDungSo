@@ -5,6 +5,7 @@ public class FruitMenuManager : MonoBehaviour
     public GameObject applePrefab;
     public GameObject bananaPrefab;
     public GameObject orangePrefab;
+    public GameObject secretPrefab;
 
     public Transform handPosition; // Vị trí tay cầm hoa quả
 
@@ -27,6 +28,13 @@ public class FruitMenuManager : MonoBehaviour
         EquipFruit(orangePrefab);
         Debug.Log("Orange selected!");
     }
+
+        public void SelectSecret()
+    {
+        EquipFruit(secretPrefab);
+        Debug.Log("Secret selected!");
+    }
+
 
     public void EquipFruit(GameObject fruitPrefab)
     {
