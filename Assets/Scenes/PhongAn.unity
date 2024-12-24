@@ -2447,7 +2447,7 @@ MonoBehaviour:
   applePrefab: {fileID: 1302680237246272273, guid: 4196c8791cb22f8469d31cef1d01efed, type: 3}
   bananaPrefab: {fileID: 6065599517904667633, guid: 5e94c2ba792a24147a13066952fa31e2, type: 3}
   orangePrefab: {fileID: 3413508863696327307, guid: f35aab1459a91b64abba910588046a15, type: 3}
-  secretPrefab: {fileID: 919132149155446097, guid: 6e8eae578a963854c9dc675abb5384a3, type: 3}
+  secretPrefab: {fileID: 919132149155446097, guid: a0b5df842eaa8a041b2ac431d1c2b9ba, type: 3}
   handPosition: {fileID: 298840987}
 --- !u!1 &2125624948
 GameObject:
