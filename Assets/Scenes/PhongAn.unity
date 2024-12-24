@@ -2280,7 +2280,7 @@ PrefabInstance:
       objectReference: {fileID: 28234044}
     - target: {fileID: 1587505320778372411, guid: 6d3485d7b4285ef4d990505addc234cd, type: 3}
       propertyPath: sceneNames.Array.data[4]
-      value: Demo
+      value: PhongTrungBay
       objectReference: {fileID: 0}
     - target: {fileID: 7397637168141651866, guid: 6d3485d7b4285ef4d990505addc234cd, type: 3}
       propertyPath: m_LocalPosition.x
