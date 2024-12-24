@@ -9,20 +9,22 @@ public class ShowerController : MonoBehaviour
     public Camera mainCamera; // The default main camera
     public Camera showerCamera; // The new camera for the shower scene
     public AudioSource waterSound; // Reference to the AudioSource for water sound
-
+    public Camera toiletCamera;
     private Vector3 customPosition = new Vector3(-0.08f, -0.57f, -1.79f); // Custom position for the puppet
-
+    private Quaternion customRotation1 = Quaternion.Euler(0f, -90f, 0f);
     // Method called when the button is clicked
     public void TakeShower()
     {
         if (puppet != null && tubPosition != null)
         {
             puppet.transform.position = tubPosition.position;
+            puppet.transform.rotation = customRotation1;
             // Enable the shower camera and disable the main camera
             if (showerCamera != null && mainCamera != null)
             {
                 mainCamera.enabled = false; // Disable the main camera
                 showerCamera.enabled = true; // Enable the shower camera
+                toiletCamera.enabled = false;
             }
             else
             {
@@ -75,14 +77,14 @@ public class ShowerController : MonoBehaviour
             waterSound.Stop();
         }
     }
-
+    //Vector3(-10.4399996,0.430000007,6.86000013)
     public void BackToPosition()
     {
         if (puppet != null)
         {
             // Assign a new Vector3 to position
             puppet.transform.position = new Vector3(-1.62f, -0.4f, 5.65f);
-
+            puppet.transform.rotation = customRotation1;
             // Switch back to the main camera
             if (mainCamera != null && showerCamera != null)
             {
