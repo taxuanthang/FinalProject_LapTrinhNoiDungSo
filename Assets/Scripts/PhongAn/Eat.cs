@@ -8,14 +8,11 @@ public class MyCharacterController : MonoBehaviour
 
     void Update()
     {
-        HandleEating();
     }
 
     // Hàm xử lý khi bấm phím E để ăn hoa quả
-    void HandleEating()
+    public void HandleEating()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
             if (handPosition.transform.childCount > 0)
             {
                 // Kiểm tra hoa quả trên tay
@@ -34,7 +31,6 @@ public class MyCharacterController : MonoBehaviour
             {
                 Debug.Log("No fruit in hand to eat!");
             }
-        }
     }
 
     // Hàm được gọi từ Animation Event để phát âm thanh
